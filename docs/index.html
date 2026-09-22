@@ -3,7 +3,7 @@
     <title>CV Alexandre PRYIMAK</title>
     <script>
         function toggleCompetences(){
-            const compSection = document.getElementById("competences");
+            const compSection = document.getElementById("competences", "formations");
             compSection.style.display =
                 compSection.style.display === "none" ? "block" : "none";
         }
@@ -32,8 +32,9 @@
         </ul>
     </section>
 
-    <section>
-        <h2>Parcours pédagogique</h2>
+    <button onclick="toggleCompetences()">Afficher/Masquer les formations</button>
+    <section id="formations">
+        <h2>Formations</h2>
         <ul>
             <li><strong>BTS SIO</strong> - 2025 / Présent</li>
             <li><strong>Baccalauréat Technologique</strong> - 2025</li>
